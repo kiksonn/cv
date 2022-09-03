@@ -1,0 +1,68 @@
+@media(min-width:992px) {
+
+     // HEADER 
+
+     .header {
+        &__heading {
+            font-size: 5.5rem;
+        }
+    }
+    
+    // ABOUT US
+
+    .about-us {
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &__img {
+            width: 45%;
+            margin-right: 7rem;
+            height: fit-content;
+        }
+
+        &__box {
+            margin: 0;
+            width: 55%;
+        }
+
+        &__box-text {
+            line-height: 160%;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    // NAV
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: block;
+        background-color: $white;
+    }
+    
+    .nav {
+
+        &__box {
+            justify-content: space-between;
+        }
+
+        &__list {
+            flex-direction: row;
+            width: auto;
+            height: auto;
+            transform: translateX(0);
+            background-color: $white;
+            &-item-link {
+                padding: 3rem;
+            }
+
+        }
+    }
+
+}
