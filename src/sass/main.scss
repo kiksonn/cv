@@ -155,8 +155,8 @@ body {
         margin: .5em 0;
         border-radius: 8px;
         overflow: hidden;
-        background-color: #fff;
-        border: 1px solid #d8d8d8;
+        background-color: $white;
+        border: 1px solid $grey;
     }
 
     &__btn {
@@ -166,12 +166,11 @@ body {
         text-align: left;
         position: relative;
         background-color: transparent;
-        padding: 1em;
+        padding: 1.2em 1em;
         cursor: pointer;
         color: $black;
-        font-weight: bold;
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     &__btn::after {
@@ -191,7 +190,7 @@ body {
     }
 
     &__text--one {
-        border-top: 1px solid #d8d8d8;
+        border-top: 1px solid $grey;
     }
 
     &__text {
@@ -218,7 +217,7 @@ body {
     position: relative;
     margin-bottom: 2em;
     padding: 2em;
-    width: 50%;
+    width: 100%;
     border: 1px solid $black;
     border-radius: 8px;
 }
@@ -233,22 +232,16 @@ body {
     height: 20px;
 }
 
-.timeline li:nth-child(even) {
+.timeline li {
     align-self: flex-end;
     transform: translateX(20px);
 }
 
-.timeline li:nth-child(even)::after {
-    left: -31px;
+.timeline li::after {
+    left: -65px;
 }
 
-.timeline li:nth-child(odd) {
-    transform: translateX(-20px);
-}
 
-.timeline li:nth-child(odd)::after {
-    right: -31px;
-}
 
 .timeline::before {
     position: absolute;
@@ -257,8 +250,8 @@ body {
     height: 100%;
     display: block;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    // left: 50%;
+    // transform: translateX(-50%);
     background-color: $black;
 }
 
